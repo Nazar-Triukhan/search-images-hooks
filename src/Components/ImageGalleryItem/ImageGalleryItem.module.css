@@ -1,0 +1,47 @@
+.item {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgb(15 23 42 / 8%);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgb(15 23 42 / 14%);
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  cursor: zoom-in;
+  text-align: left;
+}
+
+.button:focus-visible {
+  outline: 3px solid #fbbf24;
+  outline-offset: -3px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.caption {
+  display: block;
+  overflow: hidden;
+  padding: 10px 12px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
