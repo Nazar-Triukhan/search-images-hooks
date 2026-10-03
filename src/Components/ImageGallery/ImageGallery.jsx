@@ -9,7 +9,7 @@ function ImageGallery() {
   return (
     <ul className={styles.gallery}>
       {images.map((image) => (
-        <ImageGalleryItem key={image.id} image={image} />
+        <ImageGalleryItem key={image.id + Math.random()} image={image} />
       ))}
     </ul>
   )
